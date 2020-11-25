@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-<body>
+
   <style>
     header
       {
@@ -14,11 +13,14 @@
         text-align: center;
       }
   </style>
+
+</head>
+<body>
+  <ul>
+    <?php foreach ($animals as $animal) : ?>
+      <li><?= $animal; ?></li>
+    <?php endforeach ?>
+  </ul>
 </body>
 
-      <header>
-        <h1>
-          <?= $greeting; ?>
-        </h1>
-      </header>
 </html>
