@@ -7,6 +7,13 @@
 </head>
 
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="/about.php">About Page</a></li>
+      <li><a href="/contact.php">Contact Page</a></li>
+    </ul>
+  </nav>
   <h1>Task for the Day</h1>
   <ul>
     <?php foreach ($tasks as $task) : ?>
