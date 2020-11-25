@@ -1,10 +1,14 @@
 <?php
 
-$task = [
-  'title' => 'Finish homework',
-  'due' => 'today',
-  'assigned_to' => 'John',
-  'completed' => false
+require 'functions.php';
+
+$animals = [
+  'dog',
+  'cat'
 ];
+
+// dd($animals);
+
+elibility(23);
 
 require 'index.view.php';
