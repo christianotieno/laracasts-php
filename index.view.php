@@ -9,12 +9,19 @@
 <body>
   <h1>Task for the Day</h1>
   <ul>
-    <?php foreach ($task as $heading => $value) :?>
+    <?php foreach ($tasks as $task) : ?>
       <li>
-        <strong><?= ucwords($heading) ?> :</strong>
-        <?= $value ?>
+        <?php if ($task->completed) : ?>
+          <strike>
+            <?= $task->description; ?>
+          </strike>
+        <?php else: ?>
+
+          <?= $task->description; ?>
+
+        <?php endif ?>
       </li>
-    <?php endforeach ?>
+    <?php endforeach; ?>
   </ul>
 </body>
 
