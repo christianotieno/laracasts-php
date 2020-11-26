@@ -1,6 +1,8 @@
 <?php
 
-$router->get('', 'controllers/index.php');
-$router->get('about', 'controllers/about.php');
-$router->get('about/culture', 'controllers/about-culture.php');
-$router->post('names', 'controllers/add-name.php');
+$router->get('', 'PagesControllers@home');
+$router->get('about', 'PagesControllers@about');
+$router->get('contact', 'PagesControllers@contact');
+
+$router->get('users', 'UsersControllers@index');
+$router->post('users', 'UsersControllers@store')
