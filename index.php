@@ -1,5 +1,8 @@
 <?php
 
-$greeting = 'Hello World!';
+require 'vendor/autoloader.php';
 
-echo "This is {$greeting}";
+require 'core/bootstrap.php';
+
+Router::load('routes.php')
+  ->direct(Request::uri(), Request::method());
